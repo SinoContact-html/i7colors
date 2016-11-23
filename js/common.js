@@ -72,4 +72,18 @@ $(function($) {
 	
 	var gotop = new goTop();
 	$('.gotop').height(240);
+	
+	$('.btn_suggest').click(function(e) {
+		var InfoBoxTop = ($(window).height()-261)/2 + window.scrollY;
+        $('.pop_bg').height($(document).height());
+		$('.pop_bg').fadeIn();
+		$('#feedback').css('top',InfoBoxTop);
+		$('#feedback').fadeIn();
+    });
+	
+	$('#feedback_close').click(function(e) {
+		$('.pop_bg').fadeOut();
+        $('#feedback').fadeOut();
+    });
+	
 });
