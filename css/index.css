@@ -13,7 +13,7 @@
 .hot_box .hot_mumber .hot_mumber_list_box .hot_mumber_list_arr {height:217px; padding-top:13px; margin-right:10px; position:absolute; right:0; top:0; z-index:99;}
 .hot_box .hot_mumber .hot_mumber_list_box .hot_mumber_list_arr img {cursor:pointer;}
 .hot_box .hot_mumber .hot_mumber_list_box .hot_mumber_list_arr .down_arr {position:absolute; bottom:0; left:0;}
-.hot_box .hot_product {width:808px; float:left; padding:25px 90px; position:relative;}
+.hot_box .hot_product {width:1015px; float:left; padding:25px 90px; position:relative;}
 .hot_box .hot_product .hot_product_box {width:150px; display:inline-block; text-align:left;}
 .hot_box .hot_product .hot_product_box img {max-width:100%;}
 .hot_box .hot_product .hot_product_box .hot_product_info {margin-top:10px; color:#666; font-size:12px;}
@@ -29,13 +29,13 @@
 
 .school_box {position:relative;}
 .school_box .school_text_box {box-shadow:0px 0px 10px #CCCCCC; float:left; position:relative; display:inline-block; font-size:12px; margin-right:20px; margin-bottom:20px;}
-.school_box .school_text_box .school_text {position:absolute; width:488px; bottom:0; background:url(../images/text_pop.png); color:#FFF; padding:20px 20px 15px 20px;}
+.school_box .school_text_box .school_text {position:absolute; width:100%; bottom:0; background:url(../images/text_pop.png); color:#FFF; padding:20px 20px 15px 20px;}
 .school_box .school_text_box.mr0 {margin-right:0px; float:none; margin-bottom:0px;}
 .school_box .school_text_box .school_text h1 {font-size:18px; font-weight:normal; margin-bottom:10px;}
-.school_box .school_text_box .school_text.s {width:194px; padding:15px;}
+.school_box .school_text_box .school_text.s {padding:15px;}
 .school_box .school_text_box .school_text.s h1 {font-size:14px; margin-bottom:0px;}
 .school_box .school_long_box{position:absolute; right:0;}
-.school_box .school_long_box ul.school_text_list {padding:17px 20px 23px 30px; height:152px; box-shadow:0px 0px 10px #CCCCCC;}
+.school_box .school_long_box ul.school_text_list {padding:17px 20px 23px 30px; height:192px; box-shadow:0px 0px 10px #CCCCCC;}
 .school_box .school_long_box ul.school_text_list li {font-size:13px; color:#666; margin:10px 0; list-style:url(../images/list_point.gif); padding-left:5px;}
 .info_box .info_left_box {float:left; width:528px; margin-right:20px;}
 .info_box .info_left_box .img_down_text {background:#ece6f4; text-align:center; padding:5px 0; margin-bottom:15px; color:#333;}

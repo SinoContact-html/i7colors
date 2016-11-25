@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-* {margin:0; padding:0;}
+*{margin: 0;padding: 0;box-sizing: border-box;-moz-box-sizing: border-box;-moz-box-sizing: border-box;}
 html{-webkit-text-size-adjust:none;}
 img {border: 0 none; vertical-align: top; }
 em {font-style:normal;}
@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 {}
 body, input, select, button, textarea {font-size:12px;}
 button {cursor: pointer; }
 body {color: #000; line-height: 150%; font-size:12px; line-height:20px; color:#333; padding:0; font-family:"微软雅黑"; height:100%; position:relative;}
-a:link {text-decoration:none;}
+a,a:link {text-decoration:none; color:#333;}
 
 .dn {display:none;}
 .mb10 {margin-bottom:10px !important;}
@@ -44,7 +44,7 @@ input[type="button"] {border:none; background:none;}
 	left:0;
     width: 100%;
 }
-.swiper-pagination-switch {display:inline-block; border-radius:100%; margin:0 5px; cursor:pointer;}
+.swiper-pagination-switch {display:inline-block; border-radius:100%; margin:0 5px; cursor:pointer; width:10px; height:10px; background:#FFF;}
 .swiper-button-prev,.swiper-button-next {position:absolute; top:50%; cursor:pointer;}
 
 
@@ -150,8 +150,8 @@ input[type="button"] {border:none; background:none;}
 .shopping_car_box .qr_box img {margin-right:10px;}
 .menu_bar {background:#f10215; height:42px; line-height:42px;}
 .menu_bar ul.menu li {float:left; color:#FFF; font-size:14px; width:105px; text-align:center;}
-.menu_bar ul.menu li.onthis {border-bottom:#FFF 2px solid; height:40px;}
-.menu_bar .log_reg_box {background:#961923; border-bottom:#6b070f 2px solid; width:190px; height:40px; line-height:40px; text-align:center; color:#FFF; font-size:13px; display:block;}
+.menu_bar ul.menu li.onthis {border-bottom:#FFF 2px solid; height:42px;}
+.menu_bar .log_reg_box {background:#961923; border-bottom:#6b070f 2px solid; width:190px; height:42px; line-height:40px; text-align:center; color:#FFF; font-size:13px; display:block;}
 .menu_bar .log_reg_box * {vertical-align:middle;}
 .menu_bar .log_reg_box img {margin-right:10px;}
 /*************** 头部 end *****************/
@@ -162,6 +162,12 @@ input[type="button"] {border:none; background:none;}
 .red_bar_title * {vertical-align:middle;}
 .red_bar_title img {margin:0 10px 0 5px;}
 .red_bar_title a {position:absolute; right:20px; font-size:12px; color:#666;}
+
+.business-title{width: 100%;height: 45px;background: url(../images/business-title-bg.png) left center no-repeat; padding-left: 2px; color: #666;}
+.business-title.brb {border-bottom:#e0e0e0 1px solid; height:25px; margin-top:20px; background-position:left 3px;}
+.business-title.brb span {line-height:normal;}
+.business-title span{margin: 0 16px;line-height: 45px;}
+.business-title span:nth-of-type(1){font-weight: bold;}
 
 
 /*************** 底部 strart *****************/
