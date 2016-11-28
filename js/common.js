@@ -11,7 +11,7 @@ $(function($) {
 	
 	var mySwiper_mumber1 = new Swiper ('#mumber1', {
 		mode  : 'vertical',
-		calculateHeight : true,
+		slidesPerView: 5,
 	})
 	
 	$('#up_arr1').on('click', function(e){
@@ -39,7 +39,7 @@ $(function($) {
 	
 	var mySwiper_mumber2 = new Swiper ('#mumber2', {
 		mode  : 'vertical',
-		calculateHeight : true,
+		slidesPerView: 5,
 	})
 	
 	$('#up_arr2').on('click', function(e){

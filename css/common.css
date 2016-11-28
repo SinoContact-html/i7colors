@@ -136,7 +136,7 @@ input[type="button"] {border:none; background:none;}
 .top {height:130px; position:relative;}
 .top .logo {position:absolute; top:50%; margin-top:-33px;}
 .search {position:relative; top:34px; left:350px; float:left;}
-.search .search_box {border:#f10215 1px solid; background:#fcfcfc; height:33px; line-height:33px; width:550px; display:inline-block; position:relative;}
+.search .search_box {border:#f10215 1px solid; background:#fcfcfc; height:35px; line-height:30px; width:550px; display:inline-block; position:relative;}
 .search .search_box input[type="text"] {padding-left:20px; width:450px;}
 .search .search_box input[type="button"] {width:51px; background:#f10215 url(../images/search_icon.png) center center no-repeat; height:35px; position:absolute; top:-1px; right:-1px;}
 .search a {color:#ff9933; font-size:14px; margin-left:10px; text-decoration:underline;}
@@ -144,7 +144,7 @@ input[type="button"] {border:none; background:none;}
 .search .hot_search a {color:#999; font-size:12px; margin-left:0px; margin-right:10px;}
 .search .hot_search a.red {color:#F00;}
 .shopping_car_box {width:190px; margin-top:34px;}
-.shopping_car_box .shopping_car {border:#e3e4e5 1px solid; height:33px; line-height:33px; color:#f10215; text-align:center;}
+.shopping_car_box .shopping_car {border:#e3e4e5 1px solid; height:35px; line-height:35px; color:#f10215; text-align:center;}
 .shopping_car_box .shopping_car em {width:15px; height:15px; background:#f10215; line-height:15px; border-radius:100%; color:#FFF; display:inline-block; text-align:center; margin:5px; position:absolute;}
 .shopping_car_box .qr_box {text-align:center; font-size:14px; color:#666; margin-top:20px;}
 .shopping_car_box .qr_box img {margin-right:10px;}
@@ -168,6 +168,11 @@ input[type="button"] {border:none; background:none;}
 .business-title.brb span {line-height:normal;}
 .business-title span{margin: 0 16px;line-height: 45px;}
 .business-title span:nth-of-type(1){font-weight: bold;}
+
+.partner p{height: 38px;padding-left: 38px;background: url(../images/partner-bg.jpg) left top no-repeat;line-height: 28px;border-bottom: 2px #888888 solid;font-size: 18px;color: #8B8B8B;}
+.partner ul{overflow: hidden;height: 108px;}
+.partner ul li{float: left;margin: 26px 21px;}
+.partner ul li img{display: block;}
 
 
 /*************** 底部 strart *****************/

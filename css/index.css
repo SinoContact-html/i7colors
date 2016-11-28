@@ -9,8 +9,8 @@
 .hot_box .hot_mumber {width:239px; border-right:#e7e8ec 1px solid; padding:10px 15px; float:left; text-align:center;}
 .hot_box .hot_mumber .hot_mumber_title {border-bottom:#e7e8ec 1px solid; margin-bottom:20px;}
 .hot_box .hot_mumber .hot_mumber_title span {display:inline-block; background:#faa02d; color:#FFF; width:89px; height:21px; line-height:21px; border-radius:5px; position:relative; top:11px;}
-.hot_box .hot_mumber .hot_mumber_list_box {height:242px; width:100%; overflow:hidden; position:relative;}
-.hot_box .hot_mumber .hot_mumber_list_box .hot_mumber_list_arr {height:217px; padding-top:13px; margin-right:10px; position:absolute; right:0; top:0; z-index:99;}
+.hot_box .hot_mumber .hot_mumber_list_box {height:250px; width:100%; overflow:hidden; position:relative;}
+.hot_box .hot_mumber .hot_mumber_list_box .hot_mumber_list_arr {height:230px; padding-top:13px; margin-right:10px; position:absolute; right:0; top:0; z-index:99;}
 .hot_box .hot_mumber .hot_mumber_list_box .hot_mumber_list_arr img {cursor:pointer;}
 .hot_box .hot_mumber .hot_mumber_list_box .hot_mumber_list_arr .down_arr {position:absolute; bottom:0; left:0;}
 .hot_box .hot_product {width:1015px; float:left; padding:25px 90px; position:relative;}
@@ -25,7 +25,8 @@
 .swiper-button-next {background:url(../images/right_arr.jpg) no-repeat; width:42px; height:42px; margin-top:-21px; right:35px;}
 #hot_product1 .swiper-slide {text-align:center;}
 #hot_product2 .swiper-slide {text-align:center;}
-#mumber1 {height:232px !important;}
+#mumber1,#mumber2 {height:250px !important;}
+
 
 .school_box {position:relative;}
 .school_box .school_text_box {box-shadow:0px 0px 10px #CCCCCC; float:left; position:relative; display:inline-block; font-size:12px; margin-right:20px; margin-bottom:20px;}
