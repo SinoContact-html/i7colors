@@ -62,3 +62,4 @@
 .product_detil_info_box .product_detil_info_content table tr td:last-child {padding-left:40px; float:left; width:746px;}
 .product_detil_info_box .product_detil_info_content .product_detil_info_text {border-top:#ededed 1px solid; border-bottom:#ededed 1px solid; padding:10px 0; font-size:14px; line-height:30px; margin-bottom:30px;}
 .product_detil_info_box .product_detil_info_content .product_detil_info_img_title {height:31px; line-height:28px; background:url(../images/product_detil_title_bg.jpg) no-repeat; padding-left:15px; color:#FFF; font-size:16px; background-size:100%;}
+.product_info_box .product_info_btns .buy_now {width:180px; height:41px; line-height:41px; background:#f10215 url(../images/shop_car_icon.png) 40px center no-repeat; color:#FFF; font-size:16px; text-align:left; padding-left:70px; cursor:pointer; margin-left:10px; border-radius:5px;}
