@@ -34,17 +34,25 @@ a{color: #000;}
 
 /*container-right*/
 .business-right{float: left;width: 338px;margin-left: 42px;}
-
+.business-right-title-b{font-weight: bold;font-size: 20px;height: 30px;line-height: 30px; margin-bottom:10px;}
+	.right-nav{width: 100%;height: 32px;border: 1px #DFDFDF solid;border-left: 0;border-right: 0;}
+		.right-nav a{float: left;width: 50%;height: 100%;background: #D5D5D5;text-align: center;line-height: 32px;
+					font-size: 14px;}
+		.right-nav a.active{background: #FFF;}
 .business-right-top{width: 338px;height: 502px;border: 1px #EAEAEA solid;background: #F9F9F9;}
 	.business-right-title{width: 114px;height: 40px;line-height: 40px;text-align: center;border-top: 1px #F10215 solid;color: #F10215;font-size: 16px;}
 	
 /*上方right-top*/	
-	.recent{width: 338px;height: 462px;border-top: 1px #EAEAEA solid;}
+	.recent{width: 338px;border-top: 1px #EAEAEA solid;}
 		.recent li{width: 100%;height: 90px;overflow: hidden;margin: 20px 0 0 20px;}
 			.recent li img{width: 144px;height: 90px;float: left;margin-right: 12px;}
 			.recent li p{float: left;font-size: 14px;width: 145px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 			.recent li span{float: left;color: #9A9A9A;width: 145px;}
-	
+	.recent_bus{margin-top: 5px;}
+		.recent_bus li{width: 100%;height: 100px;border-bottom: 1px #D5D5D5 dashed;overflow: hidden;}
+			.recent_bus li img{width: 100px;height: 67px;float: left;margin-right: 12px;margin-top: 16px;}
+			.recent_bus li p{float: left;margin-top: 20px;font-size: 14px;font-weight: bold;}
+			.recent_bus li span{float: right;margin-top: 25px;color: #9A9A9A;}
 	
 	
 /*下方right-bottom*/	
@@ -63,6 +71,7 @@ a{color: #000;}
 		.right-info li{background: url(../images/list-bg.jpg) left top no-repeat;padding-left: 20px;overflow: hidden;
 						width: 181px;margin-bottom: 10px;margin-left: 18px;line-height: 15px;height: 16px;
 						text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+		
 		.right-info li:nth-of-type(2){background-position: 0 -26px;}		
 		.right-info li:nth-of-type(3){background-position: 0 -52px;}		
 		.right-info li:nth-of-type(4){background-position: 0 -78px;}		
@@ -73,20 +82,17 @@ a{color: #000;}
 	.business-right-img{margin-top: 30px;margin-bottom: 15px;}
 	.business-right-title:nth-of-type(2){border-bottom: 2px #C2C2C2 solid;height: 45px;line-height: 45px;}	
 	
+	.right-info-bus li {background: url(../images/list-bg1.jpg) left top no-repeat;padding-left: 32px;width: 100%;height: 50px;line-height: 50px;border-bottom: 1px #D5D5D5 dashed;}
+		.right-info-bus li:nth-of-type(2){background-position: 0 -50px;}		
+		.right-info-bus li:nth-of-type(3){background-position: 0 -100px;}		
+		.right-info-bus li:nth-of-type(4){background-position: 0 -150px;}		
+		.right-info-bus li:nth-of-type(5){background-position: 0 -200px;}		
+		.right-info-bus li:nth-of-type(6){background-position: 0 -250px;}		
+		.right-info-bus li:nth-of-type(7){background-position: 0 -300px;}		
+		.right-info-bus li:nth-of-type(8){background-position: 0 -350px;}
+	
 /*pages*/
-.business-pages{height: 135px;overflow: hidden;}
-	.business-pages ul{overflow: hidden;margin-top: 40px;margin-left: 76px;float: left;}
-		.business-pages ul li{float: left;font-size: 12px;margin-right: 5px;}
-			.business-pages ul li a{padding: 0 18px;display: block;height: 40px;line-height: 40px;border: 1px #CCCCCC solid;
-							border-radius: 4px;}
-			.business-pages ul li:nth-of-type(1) a{background: #EBEBEB;}
-			.business-pages ul li.active a{background: #ED494A;color: #FFF;}
-			.business-pages ul li.omit a{border: 0;padding: 0;background: none;}
-	.pages-right{float: left;margin-top: 40px;}
-		.pages-right p{height: 40px;line-height: 40px;font-size: 12px;float: left;margin-right: 12px;}
-			.pages-right p input{width: 45px;height: 40px;font-size: 14px;padding: 0 10px;border: 1px #B5B5B5 solid;
-								border-radius: 5px;margin-left: 2px;margin-right: 2px;}
-			.pages-right p:nth-of-type(3) input{width: 62px;}
+
 			
 .business-pages-black{text-align: center;}
 .business-pages-black ul{overflow: hidden;margin: 40px 0 52px 222px;}

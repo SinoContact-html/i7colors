@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link href="css/public.min.css" rel="stylesheet" type="text/css" />
+    	<link href="css/idangerous.swiper2.7.6.css" rel="stylesheet" type="text/css" />
+	    <link href="css/common.css" rel="stylesheet" type="text/css" />
+	    <link href="css/business.css" rel="stylesheet" type="text/css" />
+	    <link href="css/payway.css" rel="stylesheet" type="text/css" />
+	    
+	    <script language="javascript" type="text/javascript" src="js/jquery.min.js"></script>
+		<script language="javascript" type="text/javascript" src="js/public.min.js"></script>
+        <script language="javascript" type="text/javascript" src="js/idangerous.swiper2.7.6.min.js"></script>
+        <script language="javascript" type="text/javascript" src="js/common.js"></script>  		
+	</head>
+	<body>
+		
+		<div class="pop_bg"></div>
+		<div class="feedback_box" data-html2canvas-ignore="true" id="feedback">
+			<div class="feedback_title">
+		    	<a class="feedback_close" id="feedback_close">×</a>
+		        <h3>意见反馈</h3>
+		    </div>
+		    <div class="feedback_body">
+		    	<div><span>反馈内容</span><span class="red">（*必填）</span></div>
+		        <textarea maxlength="400" class="feedback_content" name="issuedesc" data-exclude="true" placeholder="欢迎提出您在使用过程中遇到的问题或宝贵建议（400字以内），感谢您的支持。"></textarea>
+		        <div class="feedback_phone">联系方式</div>
+		        <input type="text" class="feedback_email" maxlength="100" placeholder="请留下您的联系方式，以便我们及时回复您。">
+		        <div class="feedback_footer"><div class="feedback_btn">提交反馈</div></div>
+		    </div> 
+		</div>
+		
+		<!--确认  弹出框-->
+		
+		<div class="popbox_bg" id="popbox">
+			
+		   
+		        
+		    <p class="popbox-title">订单完成<a href="javascript:;" id="close_popbox">X</a></p>
+		    <div class="popbox-content">
+		    	<p>尊敬的客户，恭喜您 !</p>
+		    	<p>您已成功下单，请您在72小时内完成支付 !</p>
+		    	<p>如有任何问题，可通过在线咨询工具或者</p>
+		    	<p>免费服务热线: 400-920-85599联系我们 !</p>
+		    </div>
+		    <a href="javascript::" class="return">确认返回首页</a>
+		</div>
+		
+		
+		
+		<!--头部-->
+		<div class="header">
+			<div class="container">
+		    	<span>Hi，欢迎来到七彩云</span>
+		        <div class="fr"><img src="images/phone.png" />400-920-8599&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">帮助中心</a></div>
+		    </div>
+		</div>
+		<div class="top">
+			<div class="container">
+		    	<a href="#" class="fl"><img class="logo" src="images/logo.png" /></a>
+		        <div class="search">
+		            <div class="search_box">
+		                <input type="text" placeholder="黑色染料" />
+		                <input type="button" />
+		            </div>
+		            <a href="#">高级搜索</a>
+		            <div class="hot_search">
+		            	<a href="#" class="red">分散彩蓝B</a>
+		                <a href="#">开达士林(E)型蓝RSN</a>
+		                <a href="#">100%超细粉(颗粒)</a>
+		            </div>
+		    	</div>
+		        <div class="shopping_car_box fr">
+		        	<div class="shopping_car"><img src="images/spcar_icon.jpg" />我的购物车<em>0</em></div>
+		            <div class="qr_box"><img src="images/qr_icon.gif" />扫描二维码</div>
+		        </div>
+		    </div>
+		</div>
+		<div class="menu_bar">
+			<div class="container">
+		    	<ul class="menu">
+		        	<a href="#"><li class="onthis">首页</li></a>
+					<a href="#"><li>商城</li></a>
+		            <a href="#"><li>大学堂</li></a>
+		            <a href="#"><li>行业资讯</li></a>
+		            <a href="#"><li>会员风采</li></a>
+		            <a href="#"><li>关于七彩云</li></a>
+		        </ul>
+		        <a href="#" class="log_reg_box fr"><img src="images/login_icon.png" /><span>登录/注册</span></a>
+		    </div>
+		</div>
+		<!--头部结束-->
+		
+		
+		
+		<div class="payway-content container">
+			<div class="pay-content-head">
+				<p class="goods-num">订单提交成功，请您尽快付款! 订单号:<span>NBNB84646549845644</span></p>
+				<P class="goods-time">
+					请您在<span>72小时内</span>完成支付，否则订单会被自动取消 (商品价格会随市场浮动儿产生变化，超市后需要重新询价)
+				</P>
+				<p class="goods-price">订单金额:<span>￥<b>32500.00</b></span></p>
+			</div>
+			
+			<div class="payway-content-middle">
+				<div class="payway-content-middle-t">
+					<p class="payway-content-middle-title">账户信息</p>
+					<p class="balance">现金余额:<span>￥2500.00</span></p>
+					<p class="credit">可使用信用额度:<span>￥0.00</span></p>
+				</div>
+				
+				<div class="payway-content-middle-m">
+					<p class="payway-content-middle-title">实际付款金额</p>
+					<p class="actual">实际需付款金额 :<span>￥<b>30000.00</b></span></p>
+					<p class="cal">注: 实际付款金额 = 订单金额 - 现金余额，付款后现金余额将自动扣除相应部分</p>
+				</div>
+				
+				<div class="payway-content-middle-b">
+					<p class="payway-content-middle-title">支付方式</p>
+					<p class="pay-way"><span class="active"></span>企业银行转账</p>
+					<p class="pay-way"><span></span>现金支付</p>
+					<ul>
+						<li>
+							<label><input type="checkbox" /><span>银行本票支付</span></label>							
+						</li>
+						<li>
+							<label><input type="checkbox" /><span>银行支票支付</span></label>
+						</li>
+						<li>
+							<label><input type="checkbox" /><span>现金支付</span></label>
+						</li>
+						
+					</ul>
+                    <p class="pay-way"><span></span>信用额支付</p>
+					<i style="clear:both;"></i>
+				</div>
+			</div>
+			
+			<a href="javascript:;" class="sure-btn" id="submit">确认</a>
+			
+		</div>
+		<!--payway-content-->
+		
+		
+		
+		
+		
+		<!--底部-->
+		<div class="bottom">
+			<div class="container">
+		    	<ul class="point_list">
+		        	<li><img src="images/cpqq.png" /><span>产品齐全</span></li>
+		            <li><img src="images/bzty.png" /><span>标准统一</span></li>
+		            <li><img src="images/jzcg.png" /><span>集中采购</span></li>
+		            <li><img src="images/ksgy.png" /><span>快速供应</span></li>
+		            <li><img src="images/zxms.png" /><span>直销模式</span></li>
+		            <li><img src="images/zyfw.png" /><span>专业技能</span></li>
+		        </ul>
+		    </div>
+		</div>
+		<div class="footer">
+			<div class="container">
+		    	<a href="#"><img class="footer_logo" src="images/logo_grey.png" width="147" /></a>
+		        <div class="foot_box">
+		        	<div class="links_box">
+		            	<ul>
+		                	<li>
+		                    	<h1>新手指南</h1>
+		                        <a href="#"><p>新手成长</p></a>
+		                        <a href="#"><p>企业注册</p></a>
+		                        <a href="#"><p>卖家入门</p></a>
+		                        <a href="#"><p>卖家入门</p></a>
+		                        <a href="#"><p>客服中心</p></a>
+		                    </li>
+		                    <li>
+		                    	<h1>采购商服务</h1>
+		                        <a href="#"><p>在线订货</p></a>
+		                        <a href="#"><p>在线教育</p></a>
+		                        <a href="#"><p>找供应商</p></a>
+		                        <a href="#"><p>找订单</p></a>
+		                    </li>
+		                    <li>
+		                    	<h1>供应商服务</h1>
+		                        <a href="#"><p>卖家服务</p></a>
+		                        <a href="#"><p>物流平台</p></a>
+		                    </li>
+		                    <li>
+		                    	<h1>七彩云服务</h1>
+		                        <a href="#"><p>客服中心</p></a>
+		                    </li>
+		                    <li>
+		                    	<h1>交易安全</h1>
+		                        <a href="#"><p>买家防骗</p></a>
+		                        <a href="#"><p>卖家防骗</p></a>
+		                        <a href="#"><p>举报投诉</p></a>
+		                    </li>
+		                    <li class="qr_box">
+		                    	<img src="images/QR.jpg" />
+		                    	关注微信公众号
+		                    </li>
+		                </ul>
+		            </div>
+		            <div class="bz">
+		            	版权声明  |  法律法规  |  咨询建议  上海七彩云电子商务有限公司(沪ICP备15026231号-1)   沪公网安备 31010402000379<br/>
+						Copyright © 2015 i7colors.com v1.50 All rights reserved. 
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<!--底部结束-->
+		
+		
+		
+	</body>
+</html>

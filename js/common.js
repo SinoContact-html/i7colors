@@ -70,7 +70,7 @@ $(function($) {
     })
 	
 	//var gotop = new goTop();
-	$('.gotop').height(240);
+	//$('.gotop').height(240);
 	
 	$('.btn_suggest').click(function(e) {
 		var InfoBoxTop = ($(window).height()-261)/2 + window.scrollY;
@@ -78,11 +78,13 @@ $(function($) {
 		$('.pop_bg').fadeIn();
 		$('#feedback').css('top',InfoBoxTop);
 		$('#feedback').fadeIn();
+		$('body').css('overflow','hidden');
     });
 	
 	$('#feedback_close').click(function(e) {
 		$('.pop_bg').fadeOut();
         $('#feedback').fadeOut();
+		$('body').css('overflow','auto');
     });
 	
 	var mySwiper_school_banner = new Swiper ('#school_banner', {
@@ -186,6 +188,128 @@ $(function($) {
         $('.problem_detil').slideUp();
 		$(this).siblings('.problem_detil').slideDown();
     });
+	
+	$('#submit').click(function(e) {
+		var popHeight = $('#popbox').height();
+        var InfoBoxTop = ($(window).height()-popHeight)/2 + window.scrollY-10;
+        $('.pop_bg').height($(document).height());
+		$('.pop_bg').fadeIn();
+		$('#popbox').css('top',InfoBoxTop);
+		$('#popbox').fadeIn();
+		$('body').css('overflow','hidden');
+    });
+	
+	$('#close_popbox').click(function(e) {
+        $('.pop_bg').fadeOut();
+        $('#popbox').fadeOut();
+		$('body').css('overflow','auto');
+    });
+	
+	$('.input_box em').click(function(e) {
+        if(!$(this).hasClass('show')){
+			$(this).addClass('show');
+			$(this).siblings('.text').val($(this).siblings('.pass').val());
+			$(this).siblings('.text').show();
+			$(this).siblings('.pass').hide();
+		}else{
+			$(this).removeClass('show');
+			$(this).siblings('.pass').val($(this).siblings('.text').val());
+			$(this).siblings('.pass').show();
+			$(this).siblings('.text').hide();
+		}
+    });
+	
+	$('.mumber_title_bar').click(function(e) {
+		if($(this).next('.mumber_menu_list').css('display') == 'block'){
+			$(this).next('.mumber_menu_list').slideUp();
+		}else{
+			$('.mumber_menu_list').slideUp();
+			$(this).next('.mumber_menu_list').slideDown();
+		}
+    });
+	
+	$('.level_one em').click(function(e) {
+		if($(this).parent().siblings('.level_two').css('display') == 'block'){
+			$(this).removeClass('open');
+			$(this).parent().siblings('.level_two').slideUp();
+		}else{
+			$('.level_one em').removeClass('open');
+			$('.level_two').slideUp();
+			$(this).addClass('open');
+			$(this).parent().siblings('.level_two').slideDown();
+		}
+    });
+	
+	$('.pro_plus').click(function(e) {
+        var thisNumber = $(this).siblings('span').html();
+		thisNumber++;
+		$(this).siblings('span').html(thisNumber);
+    });
+	
+	$('.pro_reduce').click(function(e) {
+		var thisNumber = $(this).siblings('span').html();
+		if(thisNumber<=1) return;
+		thisNumber--;
+		$(this).siblings('span').html(thisNumber);
+    });
+	
+	$('.all').click(function(e) {
+        if($(this).is(':checked')){
+			$(this).parents('.tab_main_box').find('input[type="checkbox"]').attr("checked","checked");
+		}else{
+			$(this).parents('.tab_main_box').find('input[type="checkbox"]').removeAttr("checked");
+		}
+    });
+	
+	$(".new-invoice-btn").on("click",function(){
+		$(".new-invoice").css("display","block");
+		$(this).css("display","none");
+	})
+	
+	
+	$("#submit").on("click",function(){
+		$(".consignee-box").css("display","none");
+	})
+	
+	$(".cosignee-btn").on("click",function(){
+		var InfoBoxTop = ($(window).height()-430)/2 + window.scrollY;
+        $('.pop_bg').height($(document).height());
+		$('.pop_bg').fadeIn();
+		$('#popbox2').css('top',InfoBoxTop);
+		$('#popbox2').fadeIn();
+		$('body').css('overflow','hidden');
+		
+		$(".invoice-box").css("display","none");
+		
+		
+	})
+	
+	$('#close_popbox2').click(function(e) {
+        $('.pop_bg').fadeOut();
+        $('#popbox2').fadeOut();
+		$('body').css('overflow','auto');
+    });
+	
+	$('#select_type').change(function(e) {
+        $('#text_type').val($(this).find('option:selected').val());
+    });
+	
+	$('.consignee li').hover(function(){
+		$('.consignee li').removeClass('active');
+		$(this).addClass('active');
+		$(this).find('p').show();
+	},function(){
+		$('.consignee li').removeClass('active');
+		$(this).find('p').hide();
+	});
+	
+	$('#all_read').click(function(e) {
+        $('.mall_sms_table').find('em').addClass('read');
+    });
+	
+	$('.reason').click(function(e) {
+        $('.content').html($(this).html());
+    });
 });
 
 function AlexTab2(tabId,boxId){this.init(tabId,boxId);}
@@ -210,4 +334,25 @@ AlexTab2.prototype = {
             }
         })
     }
+}
+
+function OpenPopbox(id){
+    var popbox_bg = $('.pop_bg');
+    $(popbox_bg).height($(document).height());
+    $(popbox_bg).width($(document).width());
+    var boxName = $('#'+id);
+    //var InfoBoxLeft = ($(window).width()-$(boxName).width()+2)/2;
+    var InfoBoxTop = ($(window).height()-$(boxName).height()+2)/2 + window.scrollY;
+    $(boxName).css({'top':InfoBoxTop+'px'});
+    $(popbox_bg).fadeIn(300);
+    $(boxName).fadeIn(300);
+	$('body').css('overflow','hidden');
+}
+
+function ClosePopbox(id){
+    var popbox_bg = $('.pop_bg');
+    var boxName = $('#'+id);
+    $(boxName).fadeOut(300);
+    $(popbox_bg).fadeOut(300);
+	$('body').css('overflow','auto');
 }
