@@ -73,33 +73,41 @@
 <div class="container bbsBox">
     <!--论坛通用搜索栏-->
     <div class="bbsSearch">
-        <div class="inputBox">
-            <label>
-                <input class="searchText" type="text" name="">
-            </label>
-            <label class="selectBox">
-                <select id="bbsSelect">
-                    <option value="article">搜帖子</option>
-                    <option value="user">搜用户</option>
-                </select>
-                <div id="bbsSelectText" class="selectBg">帖子</div>
-            </label>
-            <script type="text/javascript">
-                $('#bbsSelect').change(function(){
-                    if($(this).val() == 'article'){
-                        $('#bbsSelectText').text('帖子');
-                    }else{
-                        $('#bbsSelectText').text('用户');
-                    }                    
-                })
-            </script>
-        </div>
-        <button type="submit"></button>
-        <div class="hotSearch">
-            <strong>热搜：</strong>
-            <a href="#">七彩云</a>
-            <a href="#">数码墨水</a>
-        </div>
+        <form action="#">
+            <div class="inputBox">
+                <label>
+                    <input class="searchText" type="text" name="">
+                </label>
+                <label class="selectBox">
+                    <select id="bbsSelect">
+                        <option value="article">搜帖子</option>
+                        <option value="user">搜用户</option>
+                    </select>
+                    <div id="bbsSelectText" class="selectBg">帖子</div>
+                </label>
+                <script type="text/javascript">
+                    $('#bbsSelect').change(function(){
+                        if($(this).val() == 'article'){
+                            $('#bbsSelectText').text('帖子');
+                        }else{
+                            $('#bbsSelectText').text('用户');
+                        }                    
+                    })
+                </script>
+            </div>
+            <button type="submit"></button>
+            <div class="hotSearch">
+                <strong>热搜：</strong>
+                <a href="#">七彩云</a>
+                <a href="#">数码墨水</a>
+            </div>
+        </form>
+    </div>
+    <div class="bbsCrumbs">
+        <a class="homePage" href="#">首页</a>
+        <a href="#">大学堂</a>
+        <a href="#">大学堂哈哈</a>
+        <strong>七彩云论坛</strong>
     </div>
 </div>
 <!--内容结束-->

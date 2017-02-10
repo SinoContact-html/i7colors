@@ -1,4 +1,5 @@
 .bbsBox {}
+/*通用搜索栏*/
 .bbsBox .bbsSearch {background: #f2f2f2; border: 1px solid #e7e9ea; border-top: none; padding: 8px 14px; height: 46px;}
 .bbsBox .bbsSearch .inputBox {height: 30px; padding: 3px; width: 330px; background: #fff;  border: 1px solid #cfdee3; position: relative; float: left;}
 .bbsBox .bbsSearch .inputBox form {height: 24px;}
@@ -10,3 +11,12 @@
 .bbsBox .bbsSearch button {width: 30px; height: 30px; border: none; display: block; float: left; margin-left: 8px; background: url('../images/bbs_search.gif') no-repeat;}
 .bbsBox .bbsSearch .hotSearch { height: 30px; line-height: 30px; float: left; padding-left: 10px;}
 .bbsBox .bbsSearch .hotSearch a {display: inline-block; padding: 0 3px; color: #666;}
+
+/*通用面包屑*/
+.bbsBox .bbsCrumbs {height: 30px; line-height: 30px; padding-top: 10px;}
+.bbsBox .bbsCrumbs a,
+.bbsBox .bbsCrumbs strong {display: inline-block; color: #090402;}
+.bbsBox .bbsCrumbs a {background: url('../images/crumbs_next.gif') right center no-repeat; padding:0 20px 0 10px;}
+.bbsBox .bbsCrumbs strong {padding-left:10px;}
+.bbsBox .bbsCrumbs a.homePage {padding-left: 25px; position: relative;}
+.bbsBox .bbsCrumbs a.homePage:after {display: block; width: 20px; height: 30px; position: absolute; left: 0; top: 0; content:""; background: url('../images/crumbs_home.gif') center center no-repeat;}
