@@ -4,13 +4,13 @@
 .mumber_right_content .my_order_title {height:60px; line-height:60px;}
 .mumber_right_content .my_order_title a {margin-right:10px;}
 .mumber_right_content .my_order_title a.active {border-bottom:#e4393c 2px solid; color:#e4393c; font-weight:bold;}
-.order_seach_box {width:225px; height:25px; float:right; line-height:normal; margin-top:20px;}
+.order_seach_box {width:225px; height:25px; float:right; line-height:normal; margin-top:20px; position:relative;}
 .order_seach_box .order_seach_text {border:#ccc 1px solid; height:25px; width:170px; display:inline-block; vertical-align:middle;}
 .order_seach_box .order_seach_text input[type="text"] {width:100%; padding:0 10px;}
-.order_seach_box em {display:inline-block; width:55px; height:25px; background:#f5f4f4 url(../images/search_icon_grey.png) center center no-repeat; cursor:pointer; vertical-align:middle; margin-left:-5px; border:#dddddd 1px solid; border-left:none; border-radius:0 3px 3px 0;}
+.order_seach_box em {display:inline-block; width:55px; height:25px; background:#f5f4f4 url(../images/search_icon_grey.png) center center no-repeat; cursor:pointer; vertical-align:middle; margin-left:-5px; border:#dddddd 1px solid; border-left:none; border-radius:0 3px 3px 0; position:absolute; right:0; top:0;}
 .mumber_right_content .my_order_box {border:#e5e5e5 1px solid; margin-bottom:20px;}
 .mumber_right_content .my_order_box .my_order_box_title {background:#f5f5f5; padding:5px 15px;}
-.mumber_right_content .my_order_box .my_order_box_title p {display:inline-block; margin-right:30px;}
+.mumber_right_content .my_order_box .my_order_box_title p {display:inline; margin-right:30px;}
 .mumber_right_content .my_order_box .my_order_box_title p span {color:#aaaaaa;}
 .mumber_right_content .my_order_box  table.my_order_table tbody tr td {padding:15px; border-right:#e5e5e5 1px solid; border-bottom:#e5e5e5 1px solid; color:#999;}
 .mumber_right_content .my_order_box table.my_order_table tbody tr td:first-child {border-bottom:#e5e5e5 1px dotted;}

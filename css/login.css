@@ -1,6 +1,6 @@
 *{box-sizing: border-box;}
 a{color: #000;}
-section{background: #F2F2F2;}
+.section{background: #F2F2F2;}
 .login-container{width: 1440px;margin: 0 auto;}
 /*logo*/
 .login-banner{background: url(../images/logo-bg.jpg) no-repeat;background-size: 100% 100%;
@@ -8,7 +8,7 @@ section{background: #F2F2F2;}
 	.login-banner img{margin-top: 34px;width: 298px;height: 64px;}
 	.login-banner span{font-size: 22px;line-height: 140px;margin-left: 42px;color: #999;}
 /*login-content*/
-.login-content{height: 780px;background: url(../images/login-content-bg.jpg) no-repeat;background-size: 100%; width:1260px; margin:0 auto;}
+.login-content{height: 780px;background: url(../images/login-content-bg.jpg) no-repeat; width:1260px; margin:0 auto; background-position: -50px -10px;}
 /*login-content-left*/
 .login-content-left{float: left;width: 628px;height: 407px;margin-top: 220px;margin-left: 50px;}
 	.login-content-left h1{margin: 130px auto 40px;text-align: center;font-size: 37px;}
@@ -16,7 +16,7 @@ section{background: #F2F2F2;}
 		.login-content-left ul li{float: left;margin-right: 30px;}
 
 /*login-content-right*/
-.login-content-right{float: left;width: 442px;height: 590px;margin-left: 48px;padding:0 55px 0 60px; background:url(../images/login_box_bg.png) no-repeat; margin-top:126px;}
+.login-content-right{float: left;width: 442px;height: 590px;margin-left: 48px;padding:0 55px 0 60px; background:url(../images/login_box_bg.png) no-repeat; margin-top:126px; *padding:0 35px 0 30px;}
 	.login-content-title{overflow: hidden;margin-top: 34px;}
 		.login-content-title span:nth-of-type(1){font-size: 22px;float: left;}
 		.login-content-title span:nth-of-type(2){font-size: 14px;float: right;line-height: 28px;}

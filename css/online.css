@@ -12,7 +12,7 @@
 .online_bg .online_box .online_box_title .online_phone img {vertical-align:middle;}
 .online_bg .online_box .online_box_title .close_online {position:absolute; top:-15px; right:-15px;}
 .online_bg .online_box .online_left_box {float:left; width:760px;}
-.online_bg .online_box .online_right_box {float:left; width:340px; border-left:#dcdee4 1px solid; height:632px;}
+.online_bg .online_box .online_right_box {float:left; width:340px; border-left:#dcdee4 1px solid; height:632px; *width:338px;}
 .online_bg .online_box .online_left_box .online_show_talk {padding:0 15px; position:relative; text-align:center; height:433px; overflow:auto;}
 .online_bg .online_box .online_left_box .online_show_talk .online_show_record {color:#f28585; margin:20px 0; cursor:pointer;}
 .online_bg .online_box .online_left_box .online_show_talk .online_show_record img {margin-right:5px;}
@@ -42,7 +42,7 @@
 .online_bg .online_box .online_right_box .online_this_pro .coll_btn {width:180px; height:41px; line-height:41px; background:#f10215 url(../images/coll_icon.png) 30px center no-repeat; font-size:16px; color:#FFF; text-align:left; padding-left:65px; border-radius:3px; cursor:pointer; margin:10px 0 20px 80px;}
 .online_bg .online_box .online_right_box .already_coll {font-size:14px; margin:15px 0 0 15px;}
 .online_bg .online_box .online_right_box .online_pro_box.brb {padding:15px 0; border-bottom:#dcdee4 1px dotted;}
-.online_bg .online_box .online_right_box .already_coll_box {padding:0 15px; height:350px; overflow:auto;}
+.online_bg .online_box .online_right_box .already_coll_box {padding:0 15px; height:350px; overflow:auto; *height:300px;}
 .online_bg .online_box .online_right_box ul.problem_list {clear:left; height:590px; overflow:auto;}
 .online_bg .online_box .online_right_box ul.problem_list li h1 {height:40px; line-height:40px; border-bottom:#ced9e1 1px solid; background:url(../images/close_icon.jpg) top right no-repeat; padding-left:10px; font-size:12px; font-weight:normal; cursor:pointer;}
 .online_bg .online_box .online_right_box ul.problem_list li .problem_detil {padding:10px; background:#eceef2; border-bottom:#ced9e1 1px solid; display:none;}

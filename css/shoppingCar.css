@@ -18,7 +18,7 @@
 .mumber_right_content .product_chose_table table tr td.pro_box p span {margin-left:0px;}
 .mumber_right_content .product_chose_table table tr td.pro_box * {vertical-align:middle;}
 .mumber_right_content .product_chose_table table tr td .pro_number_box {width:77px; height:25px; line-height:25px; background:url(../images/pro_number_box.jpg) no-repeat; margin:0 auto; text-align:center; position:relative}
-.mumber_right_content .product_chose_table table tr td .pro_number_box span {margin-left:0px;}
+.mumber_right_content .product_chose_table table tr td .pro_number_box input[type="text"] {width:40px; text-align:center; height:25px; line-height:25px; margin-top:-2px;}
 .mumber_right_content .product_chose_table table tr td .pro_number_box em {width:19px; height:25px; cursor:pointer; display:inline-block; position:absolute;}
 .mumber_right_content .product_chose_table table tr td .pro_number_box em.pro_plus {right:0;}
 .mumber_right_content .product_chose_table table tr td .pro_number_box em.pro_reduce {left:0;}
@@ -31,7 +31,7 @@
 .mumber_right_content .shopping_car_bill table tr td span.total_price em {font-size:12px; font-weight:normal; margin-right:-5px;}
 
 .mumber_right_content .order_progress {height:175px; width:750px; margin:0 auto;}
-.mumber_right_content .order_progress .order_progress_box {text-align:center; float:left; width:66px; height:150px; padding-top:110px; margin-top:-12px; position:relative; z-index:99;}
+.mumber_right_content .order_progress .order_progress_box {text-align:center; float:left; width:66px; height:150px; padding-top:110px; margin-top:-12px; position:relative; z-index:99; *padding-top:0px; *margin-top:30px;}
 .mumber_right_content .order_progress .order_progress_box.onthis {background-size:60px 60px !important;}
 .mumber_right_content .order_progress .order_progress_box.submit {background:url(../images/sub_order_icon.png) center center no-repeat; background-size:46px 46px;}
 .mumber_right_content .order_progress .order_progress_box.submit.none {background:url(../images/sub_order_icon_none.png) center center no-repeat; background-size:46px 46px;}
@@ -41,7 +41,7 @@
 .mumber_right_content .order_progress .order_progress_box.out.none  {background:url(../images/out_icon_none .png) center center no-repeat; background-size:46px 46px;}
 .mumber_right_content .order_progress .order_progress_box.complete {background:url(../images/com_order_icon.png) center center no-repeat; background-size:46px 46px;}
 .mumber_right_content .order_progress .order_progress_box.complete.none {background:url(../images/com_order_icon_none.png) center center no-repeat; background-size:46px 46px;}
-.mumber_right_content .order_progress .order_progress_bar {width:175px; height:4px; background:#e1e2e3; float:left; position:relative; top:62px; margin:0 -10px;}
+.mumber_right_content .order_progress .order_progress_bar {width:175px; height:4px; background:#e1e2e3; float:left; position:relative; top:62px; margin:0 -10px; *top:102px;}
 .mumber_right_content .order_detil_info {border:#e0e0e0 1px solid; border-top-width:2px; margin-bottom:20px; padding:20px 0; background:#fafafa;}
 .mumber_right_content .order_detil_info table tr td {border-right:#f0f0f0 1px solid;}
 .mumber_right_content .order_detil_info table tr td:last-child {border-right:none;}

@@ -7,13 +7,13 @@
 .payway-content-middle-title a{float: right;color: #3D7AB1;font-size: 14px;font-weight: normal;}
 .consignee li{overflow: hidden;margin-bottom: 12px;}
 .consignee li.active {background:#fff3f3;}
-	.consignee li span{line-height: 30px;float: left;}
+	.consignee li span{line-height: 30px;float: left; margin-left:20px;}
 	.consignee li p{float: right;display: none;}
 	.consignee li.active p{display: block; line-height:30px;}
 		.consignee li p a{margin-right: 10px;}
-	.consignee li span:nth-of-type(1){float: left;width: 144px;border: 1px #DDDDDD solid;
-										text-align: center;line-height: 30px; position:relative; background:#FFF;}
-	.consignee li.default span:nth-of-type(1){border: 0;background: url(../images/default.jpg) no-repeat;}
+	.consignee li span:first-child {float: left;width: 144px;border: 1px #DDDDDD solid;
+										text-align: center;line-height: 30px; position:relative; background:#FFF; margin-left:0px;}
+	.consignee li.default span:first-child {border: 0;background: url(../images/default.jpg) no-repeat;}
 	.consignee li span:nth-of-type(2){margin-left: 20px;}
 	.consignee li span:nth-of-type(3){margin-left: 12px;}
 	.consignee li span:nth-of-type(4){margin-left: 16px;}
@@ -28,20 +28,20 @@
 .placeorder-shop-info{padding: 0 12px;background: #F7F7F7;}
 	.placeorder-shop-info dl{padding: 20px 12px;border-bottom: 1px #D9D9D9 dashed;overflow: hidden;}
 		.placeorder-shop-info dl dt,.placeorder-shop-info dl dd{float: left;}
-		.placeorder-shop-info dl dd:nth-of-type(1){margin: 25px 0 0 20px;font-size: 14px;width: 540px;}
-			.placeorder-shop-info dl dd:nth-of-type(1) p:nth-of-type(2){margin-top: 5px;color: #999999;}
-		.placeorder-shop-info dl dd:nth-of-type(2){margin-left: 202px;margin-top: 34px;width: 90px;}
-		.placeorder-shop-info dl dd:nth-of-type(3){margin-left: 74px;margin-top: 34px;width: 45px;}
-		.placeorder-shop-info dl dd:nth-of-type(4){margin-left: 70px;margin-top: 34px;color: #FF593C;}
+		.placeorder-shop-info dl dd {margin: 25px 0 0 20px;font-size: 14px;width: 540px;}
+			.placeorder-shop-info dl dd p+p{margin-top: 5px;color: #999999;}
+		.placeorder-shop-info dl dd+dd{margin-left: 202px;margin-top: 34px;width: 90px;}
+		.placeorder-shop-info dl dd+dd+dd{margin-left: 74px;margin-top: 34px;width: 45px;}
+		.placeorder-shop-info dl dd+dd+dd+dd{margin-left: 70px;margin-top: 34px;color: #FF593C;}
 /*result*/
 .placeorder-result{height: 92px;background: #F4F4F4;margin-top: 20px;border-top: 1px #E6E6E6 solid;
 					overflow: hidden;font-size: 12px;padding-right: 47px;}
-	.placeorder-result p:nth-of-type(1){float: right;margin-top: 26px;}
-		.placeorder-result p:nth-of-type(1) span{color: #FC5A33;}
-			.placeorder-result p:nth-of-type(1) span b{font-size: 22px;}
-	.placeorder-result p:nth-of-type(2){float: right;margin-top: 8px;clear: both;}
-		.placeorder-result p:nth-of-type(2) span{margin-left: 8px;}
-		.placeorder-result p:nth-of-type(2) span:nth-of-type(1){margin-right: 10px;}
+	.placeorder-result p{float: right;margin-top: 26px;}
+		.placeorder-result p span{color: #FC5A33;}
+			.placeorder-result p span b{font-size: 22px;}
+	.placeorder-result p+p{float: right;margin-top: 8px;clear: both;}
+		.placeorder-result p+p span{margin-left: 8px; color:#333;}
+		
 /*提交订单按钮*/
 a.placeorder-submit{display: block;width: 200px;height: 45px;text-align: center;line-height: 45px;color: #FFF;
 					background: #F10215;border-radius: 4px;float: right;margin: 14px 15px 55px 0;}
@@ -65,9 +65,9 @@ a.placeorder-submit{display: block;width: 200px;height: 45px;text-align: center;
 		.invoice label input[type="radio"] {width:auto; height:auto; float:none; margin-right:5px;}
 	.invoice .invoice-btn{margin-top: 32px;}	
 		.invoice .invoice-btn a{float: left;width: 58px;height: 26px;border-radius: 5px;text-align: center;
-								line-height: 26px;}
-		.invoice .invoice-btn a:nth-of-type(1){background: #F10215;color: #FFF;margin-right: 10px;}	
-		.invoice .invoice-btn a:nth-of-type(2){background: #F4F4F4;}	
+								line-height: 26px; background: #F4F4F4;}
+		.invoice .invoice-btn a:first-child{background: #F10215;color: #FFF;margin-right: 10px;}	
+			
 /*增加单位发票*/
 .new-invoice{width: 340px;height: 32px;overflow: hidden;border: 1px #E3393A solid;display: none;}
 	.new-invoice input{width:290px; height: 30px;float:left;margin: 1px 0 1px 1px;border: 1px #EBEBEB solid;}
@@ -83,7 +83,7 @@ a.placeorder-submit{display: block;width: 200px;height: 45px;text-align: center;
 		.consignee-box-content p:nth-of-type(3) input{width: 256px;}	
 	select{width: 77px;height: 24px;border: 0;border: 1px #CCCCCC solid;
 			line-height: 24px;}
-	select.adr {margin-top:4px; padding-left:10px; width:90px;}
+	select.adr {padding-left:10px; width:90px; margin-top:12px;}
 		.consignee-box-content p b{color: #999;font-weight: normal;}
 	.consignee-box-content p:nth-of-type(5){margin-bottom: 6px;}
 		a.save-consignee-btn{width: 112px;height: 24px;background: #F5F5F5;

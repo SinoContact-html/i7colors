@@ -8,7 +8,7 @@
 .mumber_right_content table.manage_table tr td img {margin-left:10px;}
 .mumber_right_content table.manage_table tr:first-child td {padding-bottom:5px; font-size:14px; background:none !important;}
 .mumber_right_content table.manage_table tr td * {vertical-align:middle;}
-.mumber_right_content table.manage_table tr td:last-child {padding-right:50px;}
+.mumber_right_content table.manage_table tr td.rteright {padding-right:50px;}
 .mumber_right_content table.manage_table.mx tr td:last-child {padding-right:0px;}
 .mumber_right_content table.manage_table tr td:first-child {background:url(../images/menu_arr.gif) 10px center no-repeat;}
 .mumber_right_content table.manage_table tr td.rteleft {padding-left:30px;}
@@ -16,4 +16,4 @@
 .mumber_right_content table.manage_table tr td span {color:#ff5a38;}
 .mumber_right_content table.manage_table tr td span.negative {color:#339933;}
 .mumber_right_content table.manage_table tr td:last-child a {text-decoration:underline;}
-.mumber_right_content table.manage_table tr td:last-child a.reason {text-overflow:ellipsis; white-space:nowrap; overflow:hidden; width:320px; display:inline-block;}
+.mumber_right_content table.manage_table tr td a.reason {text-overflow:ellipsis; white-space:nowrap; overflow:hidden; width:320px; display:inline-block; text-decoration:underline;}

@@ -31,9 +31,24 @@
         <div class="feedback_footer"><div class="feedback_btn">提交反馈</div></div>
     </div> 
 </div>
+
+<div class="popbox_bg" id="aiac">			
+	<p class="popbox-title"><span class="fl">申请提高信用额</span><a href="javascript:;" onclick="ClosePopbox('aiac')">X</a></p>
+	<div class="invoice" style="padding-left:100px;">
+		<p class="invoice-content">
+			<span><em class="red">*</em>申请理由：</span>
+			<textarea style="height:150px;"></textarea>
+		</p>
+		<p class="invoice-btn" style="padding-left:35px;">
+			<a href="javascript:;">保存</a>
+			<a href="javascript:;" onclick="ClosePopbox('aiac')">取消</a>
+		</p>
+	</div>
+</div>
+
 <div class="popbox_bg" id="adr">			
-	<p class="popbox-title">申请延期还款<a href="javascript:;" onclick="ClosePopbox('adr')">X</a></p>
-    <div class="invoice" style="padding-left:100px; padding-top:20px;">
+	<p class="popbox-title"><span class="fl">申请延期还款</span><a href="javascript:;" onclick="ClosePopbox('adr')">X</a></p>
+    <div class="invoice" style="padding-left:100px;">
         <p class="invoice-content">
             <span><em class="red">*</em>延期时间：</span>
             <select class="adr">
@@ -59,8 +74,8 @@
 </div>
 
 <div class="popbox_bg" id="rapc">			
-	<p class="popbox-title">申请提升信用额度理由<a href="javascript:;" onclick="ClosePopbox('rapc')">X</a></p>
-    <div class="invoice" style="padding-left:100px; padding-top:20px;">
+	<p class="popbox-title"><span class="fl">申请提升信用额度理由</span><a href="javascript:;" onclick="ClosePopbox('rapc')">X</a></p>
+    <div class="invoice" style="padding-left:100px;">
         <p class="invoice-content">
             <span>申请理由：</span>
             <span class="content">阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所</span>
@@ -72,8 +87,8 @@
 </div>
 
 <div class="popbox_bg" id="delay">			
-	<p class="popbox-title">延期原因<a href="javascript:;" onclick="ClosePopbox('delay')">X</a></p>
-    <div class="invoice" style="padding-left:100px; padding-top:20px;">
+	<p class="popbox-title"><span class="fl">延期原因</span><a href="javascript:;" onclick="ClosePopbox('delay')">X</a></p>
+    <div class="invoice" style="padding-left:100px;">
         <p class="invoice-content">
             <span>延期原因：</span>
             <span class="content">阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所阿三大神大神大大所</span>
@@ -450,6 +465,9 @@
             	<span>现金余额：<strong>¥2500.00</strong>  （ 可用：<strong>¥1500.00</strong> ， 冻结：<strong>¥1000.00</strong> ）</span>
                 <span>可使用信用额度：<strong>¥2000.00</strong>  （信用额度：<strong>¥10000.00</strong> ， 已使用：<strong>¥8000.00</strong>）</span>
             </div>
+            <p class="pay-way" style="margin-left:0px;">
+				您的信用额不够！您可以<a href="javascript:;" class="red_bold" onclick="OpenPopbox('aiac')">申请提高信用额</a>
+            </p>
             <table class="manage_table mx" width="100%" cellpadding="0" cellspacing="0">
             	<tr>
                 	<td><a href="javascript:;"><em>申请日期</em><img src="images/list_icon.png" /></a></td>

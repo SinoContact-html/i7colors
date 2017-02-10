@@ -5,7 +5,7 @@
 				margin: 0 40px;}
 	.bs-detail-title h1{font-size: 22px;font-weight: normal;margin-top: 40px;}
 	.bs-detail-title p{font-size: 12px;color: #999999;margin-top: 25px;}
-.bs-detail-content{font-size: 14px;padding: 0 14px;text-indent: 2em;letter-spacing: 2px;padding-top: 2px;}
+.bs-detail-content{font-size: 14px;padding: 0 14px;/*text-indent: 2em;*/letter-spacing: 2px;padding-top: 2px;}
 	.bs-detail-content p{margin-top: 44px;line-height: 25px;}
 .article-btn{margin-top: 64px;margin-bottom: 20px;overflow: hidden;padding: 0 14px;font-size: 14px;}
 	.article-btn a:nth-of-type(1){float: left;}
