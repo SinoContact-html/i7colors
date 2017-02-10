@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>七彩云</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+    <link href="../css/public.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <link href="../css/bbs.css" rel="stylesheet" type="text/css" />
+    
+    <script language="javascript" type="text/javascript" src="../js/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../js/public.min.js"></script>
+</head>
+<body>
+<div class="pop_bg"></div>
+<div class="feedback_box" data-html2canvas-ignore="true" id="feedback">
+	<div class="feedback_title">
+    	<a class="feedback_close" id="feedback_close">×</a>
+        <h3>意见反馈</h3>
+    </div>
+    <div class="feedback_body">
+    	<div><span>反馈内容</span><span class="red">（*必填）</span></div>
+        <textarea maxlength="400" class="feedback_content" name="issuedesc" data-exclude="true" placeholder="欢迎提出您在使用过程中遇到的问题或宝贵建议（400字以内），感谢您的支持。"></textarea>
+        <div class="feedback_phone">联系方式</div>
+        <input type="text" class="feedback_email" maxlength="100" placeholder="请留下您的联系方式，以便我们及时回复您。">
+        <div class="feedback_footer"><div class="feedback_btn">提交反馈</div></div>
+    </div> 
+</div>
+<div class="header">
+	<div class="container">
+    	<span class="fl">Hi，欢迎来到七彩云</span>
+        <div class="fr"><img src="../images/phone.png" />400-920-8599&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">帮助中心</a></div>
+    </div>
+</div>
+<div class="top">
+	<div class="container">
+    	<a href="#" class="fl"><img class="logo" src="../images/logo.png" /></a>
+        <div class="search">
+            <div class="search_box">
+                <input type="text" placeholder="黑色染料" />
+                <input type="button" />
+            </div>
+            <a href="#">高级搜索</a>
+            <div class="hot_search">
+            	<a href="#" class="red">分散彩蓝B</a>
+                <a href="#">开达士林(E)型蓝RSN</a>
+                <a href="#">100%超细粉(颗粒)</a>
+            </div>
+    	</div>
+        <div class="shopping_car_box fr">
+        	<div class="shopping_car"><img src="../images/spcar_icon.jpg" /><span>我的购物车</span><em>0</em></div>
+            <div class="qr_box">
+            	<img src="../images/qr_icon.gif" />扫描二维码
+                <div class="qr_show_box"><img src="../images/QR.jpg" /></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu_bar">
+	<div class="container">
+    	<ul class="menu">
+        	<a href="#"><li class="onthis">首页</li></a>
+			<a href="#"><li>商城</li></a>
+            <a href="#"><li>大学堂</li></a>
+            <a href="#"><li>行业资讯</li></a>
+            <a href="#"><li>会员风采</li></a>
+            <a href="#"><li>关于七彩云</li></a>
+        </ul>
+        <a href="#" class="log_reg_box fr"><img src="../images/login_icon.png" /><span>登录/注册</span></a>
+    </div>
+</div>
+<!--内容开始-->
+<div class="container bbsBox">
+    <!--论坛通用搜索栏-->
+    <div class="bbsSearch">
+        <div class="inputBox">
+            <label>
+                <input class="searchText" type="text" name="">
+            </label>
+            <label class="selectBox">
+                <select id="bbsSelect">
+                    <option value="article">搜帖子</option>
+                    <option value="user">搜用户</option>
+                </select>
+                <div id="bbsSelectText" class="selectBg">帖子</div>
+            </label>
+            <script type="text/javascript">
+                $('#bbsSelect').change(function(){
+                    if($(this).val() == 'article'){
+                        $('#bbsSelectText').text('帖子');
+                    }else{
+                        $('#bbsSelectText').text('用户');
+                    }                    
+                })
+            </script>
+        </div>
+        <button type="submit"></button>
+        <div class="hotSearch">
+            <strong>热搜：</strong>
+            <a href="#">七彩云</a>
+            <a href="#">数码墨水</a>
+        </div>
+    </div>
+</div>
+<!--内容结束-->
+<div class="bottom">
+	<div class="container">
+    	<ul class="point_list">
+        	<li><img src="../images/cpqq.png" /><span>产品齐全</span></li>
+            <li><img src="../images/bzty.png" /><span>标准统一</span></li>
+            <li><img src="../images/jzcg.png" /><span>集中采购</span></li>
+            <li><img src="../images/ksgy.png" /><span>快速供应</span></li>
+            <li><img src="../images/zxms.png" /><span>直销模式</span></li>
+            <li><img src="../images/zyfw.png" /><span>专业技能</span></li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+	<div class="container">
+    	<a href="#"><img class="footer_logo" src="../images/logo_grey.png" width="147" /></a>
+        <div class="foot_box">
+        	<div class="links_box">
+            	<ul>
+                	<li>
+                    	<h1>新手指南</h1>
+                        <a href="#"><p>新手成长</p></a>
+                        <a href="#"><p>企业注册</p></a>
+                        <a href="#"><p>卖家入门</p></a>
+                        <a href="#"><p>卖家入门</p></a>
+                        <a href="#"><p>客服中心</p></a>
+                    </li>
+                    <li>
+                    	<h1>采购商服务</h1>
+                        <a href="#"><p>在线订货</p></a>
+                        <a href="#"><p>在线教育</p></a>
+                        <a href="#"><p>找供应商</p></a>
+                        <a href="#"><p>找订单</p></a>
+                    </li>
+                    <li>
+                    	<h1>供应商服务</h1>
+                        <a href="#"><p>卖家服务</p></a>
+                        <a href="#"><p>物流平台</p></a>
+                    </li>
+                    <li>
+                    	<h1>七彩云服务</h1>
+                        <a href="#"><p>客服中心</p></a>
+                    </li>
+                    <li>
+                    	<h1>交易安全</h1>
+                        <a href="#"><p>买家防骗</p></a>
+                        <a href="#"><p>卖家防骗</p></a>
+                        <a href="#"><p>举报投诉</p></a>
+                    </li>
+                    <li class="qr_box">
+                    	<img src="../images/QR.jpg" />
+                    	关注微信公众号
+                    </li>
+                </ul>
+            </div>
+            <div class="bz">
+            	版权声明  |  法律法规  |  咨询建议  上海七彩云电子商务有限公司(沪ICP备15026231号-1)   <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402000379" target="_blank"><img src="../images/ga.png" />沪公网安备 31010402000379</a> | <img src="../images/lz2.jpg" width="20" />&nbsp;电子营业执照：<a href="http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&serial=9031000020160906092334000001198893-SAIC_SHOW_310000-20170103151450733495&signData=MEUCIQCSDhqslSLpZVlugCQ4+Bx3pCI1mUX3caeqykDs8mJePQIgPWe3MChh/8bTeBKCfWK6QEyqyo0Pc1z+O2UfowFARb8=" target="_blank">20170103151450733</a><br/>
+				Copyright © 2015 i7colors.com v1.50 All rights reserved. 
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

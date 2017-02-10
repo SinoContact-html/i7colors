@@ -1,0 +1,12 @@
+.bbsBox {}
+.bbsBox .bbsSearch {background: #f2f2f2; border: 1px solid #e7e9ea; border-top: none; padding: 8px 14px; height: 46px;}
+.bbsBox .bbsSearch .inputBox {height: 30px; padding: 3px; width: 330px; background: #fff;  border: 1px solid #cfdee3; position: relative; float: left;}
+.bbsBox .bbsSearch .inputBox form {height: 24px;}
+.bbsBox .bbsSearch .inputBox label {}
+.bbsBox .bbsSearch .inputBox input.searchText {height: 24px; width: 258px;}
+.bbsBox .bbsSearch .inputBox label.selectBox {position: absolute; right:0; top:0; height: 28px; width: 60px; border-left: 1px solid #dedede;}
+.bbsBox .bbsSearch .inputBox label.selectBox select {opacity: 0; position: relative; z-index: 2; width: 100%; cursor: pointer;}
+.bbsBox .bbsSearch .inputBox label.selectBox .selectBg {position: absolute; right:0; top:0; height: 28px; line-height: 28px; padding-left:10px; width: 60px; background: url('../images/down_bbs.gif') 45px center no-repeat; color: #999;}
+.bbsBox .bbsSearch button {width: 30px; height: 30px; border: none; display: block; float: left; margin-left: 8px; background: url('../images/bbs_search.gif') no-repeat;}
+.bbsBox .bbsSearch .hotSearch { height: 30px; line-height: 30px; float: left; padding-left: 10px;}
+.bbsBox .bbsSearch .hotSearch a {display: inline-block; padding: 0 3px; color: #666;}
